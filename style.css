@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  height: 50px;
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Roboto";
+  display: grid;
+  place-items: center;
+  background-image: url("./Img/black-bg.jpg");
+  height: 100%;
+  color: rgb(209, 209, 209);
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  width: 95%;
+  gap: 3em;
+}
+
+.main-heading {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.description {
+  font-size: 1.2rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+.player-images,
+.computer-images {
+  padding: 2em;
+  background-color: rgb(90, 90, 90);
+  margin-top: 7em;
+  min-width: 330px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 2em;
+}
+
+.score {
+  display: inline-block;
+  margin-bottom: 0.5em;
+  margin-left: 11em;
+}
+
+.player-images .score {
+  margin-left: 12em;
+}
+
+.button {
+  height: 100px;
+  width: 85px;
+  display: grid;
+  border-radius: 3px;
+  place-items: center;
+  background-color: rgb(51, 51, 51);
+  box-shadow: 5px 5px 1px 0 black;
+}
+
+.player-button {
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+
+.player-button:hover {
+  box-shadow: 4px 4px 1px 0 black;
+  transform: scale(0.92);
+}
+
+span {
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  html {
+    font-size: 0.8rem;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  main {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5em;
+    gap: 3em;
+  }
+  .player-images,
+  .computer-images {
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+  .score {
+    margin-left: 12em;
+  }
+
+  .player-images .score {
+    margin-left: 13.5em;
+  }
+}
