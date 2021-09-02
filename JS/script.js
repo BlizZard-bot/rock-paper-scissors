@@ -1,6 +1,5 @@
 const options = ["Rock", "Paper", "Scissors"];
 let computerSelection;
-
 let playerSelection;
 let winCounter = 0,
   lossCounter = 0;
